@@ -6,9 +6,9 @@
 	<meta name="description" content="100DOH Dataset Webpage">
 	<meta name="author" content="Dandan Shan">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="./index_file/M.png">
+	<link rel="icon" type="image/png" href="./search_file/M.png">
 	<title>100DOH Dataset</title>
-	<link rel="stylesheet" href="./index_file/style.css">
+	<link rel="stylesheet" href="./search_file/style.css">
 	<!-- need to del below ???? -->
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58631381-2"></script>
@@ -18,6 +18,22 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-58631381-2');
 	</script>
+
+	<script>
+		function retrive_thumb(str) {
+			return "http://i.ytimg.com/vi/"+str.substring(32,43)+"/mqdefault.jpg";
+		}
+	</script>
+	<style type="text/css">
+		a:link,a:visited {
+			color: #0000A0;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+		}  
+	</style>
 </head>
 <!-- Top banner   -->
 <body>
@@ -25,7 +41,7 @@
 	<table id="table01">
 		<tr>
 			<td class="top-left" width="15%">
-				<img src="./index_file/UM.png" style="height:35px;width:auto">
+				<img src="./search_file/UM.png" style="height:35px;width:auto">
 			</td>
 			<td class="top-mid" width="70%">
 				<span><strong>100DOH Dataset</strong></span>
@@ -43,12 +59,32 @@
 	</table>
 </div>
 
-
-<!-- content-->
 <div class="content">
 	<br>
 	<br>
-	<!-- overview -->
+	<table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td width="100%" valign="middle">
+			<form method="pose" enctype="multipart/form-data">
+			<h2> Search:</h2>
+			<input type="text", id="tag_search", class="control", name="search_name">
+			<br>
+			<br>
+			<h2>Basic Keywords:</h2>			
+			
+
+
+		
+
+</div>
+
+<!--  content-->
+<!--
+<div class="content">
+	<br>
+	<br>
+	
 	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
 		<tbody><tr><td width="100%" valign="middle">
 		<h2><center>Overview</center></h2>
@@ -60,12 +96,12 @@
 	</table>
 
 	
-	<!-- table for statistics -->
+
 	<br>
 	<br>
 	<table id="detail", width="70%" align="center" border="0" cellspacing="0" cellpadding="0">
 	<tbody>
-		<!--<caption>Overall Info</caption>-->
+
 		<tr>
 			<th id="detail">Category</th>
 			<th id="detail">Amount</th>
@@ -145,25 +181,25 @@
 
 
 
-	<!-- figures for statistics -->
+
 	<br>
 	<br>
-	<table id="graph" width="70%" align="center" border="0" cellspacing="0" cellpadding="0">
+	<table id="detail" width="70%" align="center" border="0" cellspacing="0" cellpadding="0">
 	<tbody><tr>
 				<td valign="middle" colspan="3">
 					<h2><center>Statistics</center></h2>
 				</td>
 			</tr>
 			<tr>
-				<td id="graph" text-align="center">
+				<td id="detail" text-align="center">
 					<img style="width:250px;height:250px" src="./index_file/Video Resolution Distribution bar.png" alt="resolution distribution">
 					<p id="pc"><strong>Resolution</strong></strong></p>
 				</td>
-				<td id="graph" text-align="center">
+				<td id="detail" text-align="center">
 					<img style="width:250px;height:250px" src="./index_file/Video Resolution Distribution bar.png" alt="channel distribution">
 					<p id="pc"><strong>Duration</strong></strong></p>
 				</td>
-				<td id="graph" text-align="center">
+				<td id="detail" text-align="center">
 					<img style="width:250px;height:250px" src="./index_file/Video Resolution Distribution bar.png" alt="resolution distribution">
 					<p id="pc"><strong>Channel</strong></strong></p>
 				</td>
@@ -176,7 +212,8 @@
 
 	</table>
 
-</div>
+</div> 
+-->
 
 
 
