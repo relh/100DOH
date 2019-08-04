@@ -46,8 +46,10 @@ table#table01{
     width: 100%; 
     height: 50px;
 }
+
+
 table#detail{
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
 }
 table#detail tr:nth-child(even) {
@@ -56,18 +58,42 @@ table#detail tr:nth-child(even) {
 table#detail tr:nth-child(odd) {
     background-color: #fff;
 }
-th#detail{
-    border: 1px solid black;
+table#detail, th{
+    border: 2px solid black;
     border-collapse: collapse;
     text-align:center;
-    background-color:rgba(137, 192, 236, 0.589);
+    background-color:rgba(137,r 192, 236, 0.589);
     padding:5px;
 }
-td#detail{
-    border: 1px solid black;
+table#detail td{
+    border: 2px solid black;
     border-collapse: collapse;
-    text-align:left;
+    text-align:center;
     padding:5px;
     padding-left:10px;
 }
 
+
+table#graph{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+table#graph tr:nth-child(even) {
+    background-color: #eee;
+}
+table#graph tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#graph th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    padding:5px;
+}
+table#graph td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    padding:5px;
+    background-color:rgba(36, 37, 37, 0.589);
+}
