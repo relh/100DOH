@@ -56,16 +56,6 @@ function update(){
         genre_name = choice[10].value;
     }
 
-    // var i;
-    // var mydata = JSON.parse(keyword_video);
-    //var to_show = mydata[genre]
-    // for (i = 0; i < to_show.length; i++ ){
-    //     text += "<tr><tb>"
-    //     text += "<a href=\"https://www.youtube.com/watch?v=" + to_show[i] + "\"><img border=\"none\" width=\"192\" height=\"108\" style=\"padding: 6px\" src=\"http://i.ytimg.com/vi/" + toshow[i] + "/mqdefault.jpg\"></a>"
-    //     text += "</tb></tr><br>"
-    // }
-
-    //usage:
     readTextFile("stats.json", function(text){
         var data = JSON.parse(text);
         console.log(data);
@@ -73,9 +63,15 @@ function update(){
         puzzle = data.puzzle
         var to_show = "";
         for (i = 0; i < puzzle.length; i++ ){
-            to_show += "<tr><tb>"
+            // if( i % 6 == 0 ){
+            //     to_show += "<tr>"
+            // }
+            to_show += "<tb>"
             to_show += "<a href=\"https://www.youtube.com/watch?v=" + puzzle[i] + "\"><img border=\"none\" width=\"192\" height=\"108\" style=\"padding: 6px\" src=\"https://img.youtube.com/vi/" + puzzle[i] + "/0.jpg\"></a>"
-            to_show += "</tb></tr><br>"
+            to_show += "</tb>"
+            // if( i % 6 ==0 ){
+            //     to_show += "<br>"
+            // }
         }
         document.getElementById("show").innerHTML = to_show;
     });
