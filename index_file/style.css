@@ -77,8 +77,8 @@ table#detail td{
 
 
 table#graph{
-    border: 2px solid black;
-    border-collapse: collapse;
+    /* border: 2px solid black;
+    border-collapse: collapse; */
 }
 table#graph tr:nth-child(even) {
     background-color: #fff;
@@ -87,14 +87,14 @@ table#graph tr:nth-child(odd) {
     background-color: #fff;
 }
 table#graph th{
-    border: 2px solid black;
-    border-collapse: collapse;
+    /* border: 2px solid black;
+    border-collapse: collapse; */
     text-align:center;
     padding:5px;
 }
 table#graph td{
-    border: 2px solid black;
-    border-collapse: collapse;
+    /* border: 2px solid black;
+    border-collapse: collapse; */
     text-align:center;
     padding:5px;
     /* background-color:rgba(36, 37, 37, 0.589); */
