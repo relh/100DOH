@@ -18,7 +18,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-58631381-2');
 	</script>
-	<script src="function.js"></script>
+	
 	<script>
 		function retrive_thumb(str) {
 			return "http://i.ytimg.com/vi/"+str.substring(32,43)+"/mqdefault.jpg";
@@ -34,6 +34,9 @@
 			color: red;
 		}  
 	</style>
+
+
+	<script type="text/javascript" src="function.js"></script>
 </head>
 <!-- Top banner   -->
 <body>
@@ -65,29 +68,32 @@
 	<table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
 	<tbody>
 		<tr>
-			<td width="30%" valign="middle">
+			<td width="30%" valign="top">
 				<h2> Search:</h2>
 				<input type="text", id="tag_search", class="control", name="search_name">
 				<br>
 				<br>
 				<h2>Basic Keywords:</h2>
 
-				<input id="radio0"  name="genre" onclick="update()" value="Boardgame" type="radio">Boardgame<br>
-				<input id="radio1"  name="genre" onclick="update()" value="DIY" type="radio">DIY<br>		
-				<input id="radio2"  name="genre" onclick="update()" value="Drinks" type="radio">Drinks<br>		
-				<input id="radio3"  name="genre" onclick="update()" value="Food" type="radio">Food<br>				
-				<input id="radio4"  name="genre" onclick="update()" value="Furniture" type="radio">Furniture<br>		
-				<input id="radio5"  name="genre" onclick="update()" value="Gardening" type="radio">Gardening<br>		
-				<input id="radio6"  name="genre" onclick="update()" value="Housework" type="radio">Housework<br>		
-				<input id="radio7"  name="genre" onclick="update()" value="Packing" type="radio">Packing<br>		
-				<input id="radio8"  name="genre" onclick="update()" value="Puzzle" type="radio">Puzzle<br>		
-				<input id="radio9"  name="genre" onclick="update()" value="Repairing" type="radio">Repairing<br>		
-				<input id="radio10" name="genre" onclick="update()" value="Study" type="radio">Study<br>	
+				<input id="radio0"  name="genre" onclick="update();" value="Boardgame" type="radio">Boardgame<br>
+				<input id="radio1"  name="genre" onclick="update();" value="DIY" type="radio">DIY<br>		
+				<input id="radio2"  name="genre" onclick="update();" value="Drinks" type="radio">Drinks<br>		
+				<input id="radio3"  name="genre" onclick="update();" value="Food" type="radio">Food<br>				
+				<input id="radio4"  name="genre" onclick="update();" value="Furniture" type="radio">Furniture<br>		
+				<input id="radio5"  name="genre" onclick="update();" value="Gardening" type="radio">Gardening<br>		
+				<input id="radio6"  name="genre" onclick="update();" value="Housework" type="radio">Housework<br>		
+				<input id="radio7"  name="genre" onclick="update();" value="Packing" type="radio">Packing<br>		
+				<input id="radio8"  name="genre" onclick="update();" value="Puzzle" type="radio">Puzzle<br>		
+				<input id="radio9"  name="genre" onclick="update();" value="Repairing" type="radio">Repairing<br>		
+				<input id="radio10" name="genre" onclick="update();" value="Study" type="radio">Study<br>	
 			</td>
 			<td width="5%" >
 			</td>
 			<td>
 				<!-- sub-table-->
+				<p id="len"></p>
+				<p id="genre_name"></p>
+				<p id="test"></p>
 				<table id="show">
 
 				</table>
