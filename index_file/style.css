@@ -81,7 +81,7 @@ table#graph{
     border-collapse: collapse;
 }
 table#graph tr:nth-child(even) {
-    background-color: #eee;
+    background-color: #fff;
 }
 table#graph tr:nth-child(odd) {
     background-color: #fff;
